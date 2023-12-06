@@ -11,10 +11,19 @@ fn part_1(input: &str) -> String {
 }
 
 fn part_2(input: &str) -> String {
-    "?"
+    "?".to_string()
 }
 
 #[test]
-fn test() {
-    assert!(true)
+fn test_part1() {
+    let input = include_str!("./example.txt");
+    let output = part_1(input);
+    assert!(output, "")
+}
+
+#[test]
+fn test_part2() {
+    let input = include_str!("./example.txt");
+    let output = part_2(input);
+    assert!(output, "")
 }
